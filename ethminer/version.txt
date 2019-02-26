@@ -1,0 +1,2 @@
+Version:
+ethminer-0.17.0-cuda10.0-windows-amd64

@@ -1,0 +1,44 @@
+{
+  "name": "lettuce-wrap",
+  "version": "0.1.0",
+  "description": "JS wrapper for ethminer",
+  "repository": "https://github.com/SaladTechnologies/lettuce-wrap.git",
+  "author": "Salad Technologies",
+  "keywords": [
+    "ethminer",
+    "crypto",
+    "mining",
+    "ethereum"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "scripts": {
+    "dev": "ts-node example/example.ts",
+    "test:": "",
+    "build": "webpack",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
+    "dts-bundle": "^0.7.3",
+    "prettier": "^1.16.4",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "@types/node": "^11.9.5"
+  }
+}
