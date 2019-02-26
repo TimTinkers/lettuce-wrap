@@ -11,20 +11,20 @@
 
 ## Basic Overview
 
-Lettuce Wrap is a Node.JS wrapper around [ethminer](https://github.com/ethereum-mining/ethminer), allowing JS and TS developers easy access to Ethereum mining using both OpenCL and CUDA devices. Lettuce Wrap is currently being used in production at Salad.io!
+Lettuce Wrap is a Node.js wrapper around [ethminer](https://github.com/ethereum-mining/ethminer), allowing JavaScript and TypeScript developers to interface with an Ethereum mining solution that supports both OpenCL- and CUDA-compatible devices. Lettuce Wrap is currently being used in production by [Salad](salad.io).
 
-**Lettuce Wrap currently only supports Windows based Node.JS environments and will not work in a browser. Since ethminer supports OSX and Linux, additional platforms are planned for future releases**
+**Lettuce Wrap currently only supports Windows-based Node.js environments and will not work in a browser. Ethminer supports OSX and Linux, so additional platform support is planned for future Lettuce Wrap releases.**
 
 ## Installation
 
 - NPM: `npm install lettuce-wrap`
 - Yarn: `yarn add lettuce-wrap`
 
-Since Lettuce Wrap is built with Typescript, typings are included in the package
+Since Lettuce Wrap is built with TypeScript, typings are included in the package.
 
 ## Usage
 
-You can either import individual Lettuce Wrap functions or the entire API
+You can either import individual Lettuce Wrap functions or the entire API.
 
 ```typescript
 import * as lettuceWrap from 'lettuce-wrap'
@@ -32,7 +32,7 @@ import * as lettuceWrap from 'lettuce-wrap'
 import { getAllDevices } from 'lettuce-wrap'
 ```
 
-For a complete example check out `/example/example.ts`
+For a complete example, check out `/example/example.ts`.
 
 ### Get Device List
 
@@ -48,7 +48,7 @@ getAllDevices().then(list => {
 
 ### Start Mining
 
-Start ethminer using all detected OpenCL & CUDA devices.
+Start ethminer using all detected OpenCL and CUDA devices.
 
 ```typescript
 import { startMiner } from 'lettuce-wrap'
